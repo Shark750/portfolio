@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <header>
+        <h1>Page de profil</h1>
+        <h2>Anaël Ouénangaré, 2 Dec 2022</h2>
+        <nav>
+            <ul class="menu">
+                <li><a href="#Accueil">Accueil</a></li>
+                <li><a href="#Edito">Edito</a></li>
+                <li><a href="#Projets">Projets</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="photo">
+            <img src="images/matete.jpg" alt="ma photo">
+        </div>
+        
+    </header>
+
+    <main>
+        <div id="edito">
+            <p>ANAËL</p>
+        </div>
+
+        <h4>Projets</h4>
+
+        <section id="projets">
+            <div class="boite" id="projet1">
+                <div class="inner">
+                    <div class="front">
+                        <h2>Projet 1</h2>
+                    </div>
+                    <div class="back">
+                        <p>IMPRESSION 3D</p>
+                    </div>
+                </div>
+            </div>
+            <div class="boite" id="projet2">
+                <div class="inner">
+                    <div class="front">
+                        <h2>Projet 2</h2>
+                    </div>
+                    <div class="back">
+                        <p>ASPIRATEUR AUTONOME</p>
+                    </div>
+                </div>
+            </div>
+            <div class="boite" id="projet3">
+                <div class="inner">
+                    <div class="front">
+                        <h2>Projet 3</h2>
+                    </div>
+                    <div class="back">
+                        <p>DROIT</p>
+                    </div>
+                </div>
+            </div>
+            <div class="boite" id="projet4">
+                <div class="inner">
+                    <div class="front">
+                        <h2>Projet 4</h2>
+                    </div>
+                    <div class="back">
+                        <p>PYTHON</p>
+                    </div>
+                </div>
+            </div>
+            <div class="boite" id="projet5">
+                <div class="inner">
+                    <div class="front">
+                        <h2>Projet 5</h2>
+                    </div>
+                    <div class="back">
+                        <p>CV WEB</p>
+                    </div>
+                </div>
+            </div>
+            <div class="boite" id="projet6">
+                <div class="inner">
+                    <div class="front">
+                        <h2>Projet 6</h2>
+                    </div>
+                    <div class="back">
+                        <p>WEB SCRAP</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="contact">
+            <p>Contactez nous</p>
+            <form action="traitement.php" method="post">
+                <table>
+                    <tr>
+                        <td><label for="firstname">ENTREZ</label></td>
+                        <td>
+                            <input type="text" name="firstname" id="firstname" placeholder="Votre prénom" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="lastname">VOS</label></td>
+                        <td>
+                            <input type="text" name="lastname" id="lastname" placeholder="votre nom" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">COORDONNÉES</label></td>
+                        <td>
+                            <input type="email" name="email" id="email" placeholder="Votre adresse mail" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="objet">ICI</label></td>
+                        <td>
+                            <input type="text" name="objet" id="objet" placeholder="Objet du message" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="message">Votre message :</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="gdpr" colspan="2">
+                            <input type="checkbox" id="rgpd" name="rgpd" value="consentement RGPD" />
+                            En cochant cette case, je reconnais avoir pris connaissance de
+                            la politique de confidentialité du site.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" onclick="controleForm()" value="Envoyer" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://www.facebook.com">FACEBOOK</a>
+        <a href="https://www.twitter.com">TWITTER</a>
+        <a href="https://www.linkedin.com">LINKDIN</a>
+
+    </footer>
+
+
+
+</body>
+
+</html>

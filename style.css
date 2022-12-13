@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin: 4%;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    font: caption;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu a {
+    display: block;
+    min-width: 120px;
+    text-decoration: none;
+    color: #e1e1e2;
+}
+
+.menu {
+    display: flex;
+    padding: 1%;
+    justify-content: right;
+    background-color: #5a6de6;
+    gap: 0;
+    margin-top: 1%;
+}
+
+.img {
+    display: block;
+    width: 10%;
+    margin: auto;
+    margin-top: 1%;
+    border: 2px solid black;
+    border-radius: 70%;
+}
+
+#photo {
+    background-color: #e1e1e2;
+    padding: 1%;
+    gap: 0;
+}
+
+#edito {
+    background-color: #5a6de6;
+    gap: 0;
+    padding: 2%;
+    text-align: center;
+}
+
+#edito p {
+    font: small-caps bold 24px/1 sans-serif;
+}
+
+h4 {
+    text-align: center;
+}
+
+#projets {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1620px;
+    margin: auto;
+}
+
+.boite {
+    background-color: transparent;
+    width: 30%;
+    min-height: 300px;
+    perspective: 1000px;
+    margin: 16px;
+}
+
+.boite-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.boite:hover .inner {
+    transform: rotateX(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 33% 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-color: #5a6de6;
+    color: black;
+}
+
+.back {
+    background-color: black;
+    color: black;
+    transform: rotateX(180deg);
+}
+
+#contact {
+    background-color: #5a6de6;
+    gap: 0;
+    padding: 2%;
+    text-align: center;
+}
+
+#contact p {
+    font: small-caps bold 24px/1 sans-serif;
+}
+
+#contact input {
+    margin-right: 95%;
+}
+
+#contact td {
+    margin-right: 95%;
+}
+
+
